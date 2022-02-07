@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="scroll.css">
+    <title>Scroll Up Loading Effect || Code Village</title>
+</head>
+<body>
+    <div class="pre">
+        <div class="counter">
+            0
+        </div>
+    </div>
+
+    <section>
+        <h2>Welcome Back in <span>Code Village Youtube Channel...</span></h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, maiores. Consequuntur libero iusto soluta fugit, fuga sed minus fugiat quod eligendi doloribus eos labore voluptatibus quas quis cumque perferendis nam dignissimos laborum explicabo nobis ab doloremque! Numquam libero autem amet est, sunt deserunt voluptatum animi. Illum, repellat quos. Commodi necessitatibus vel excepturi, cum ipsa explicabo, asperiores culpa deleniti minima modi voluptas eos aperiam soluta eligendi, officiis exercitationem iusto. Ex aliquid, odit possimus quod nam consectetur quo iure pariatur ipsam magnam quisquam suscipit similique consequatur quis, sit voluptatem velit natus voluptates quaerat enim? Corrupti quisquam fugit non, velit aliquam iusto error sint impedit ratione hic quos consectetur nemo nostrum! Fugit quos tenetur repellendus amet voluptates id, asperiores dolor recusandae maiores dicta voluptatum numquam illum quo hic ratione atque, mollitia perspiciatis ipsum inventore! Earum est incidunt recusandae illum non, dicta explicabo totam maxime adipisci dolores laboriosam rerum ipsam corrupti aspernatur laudantium tempore provident possimus velit. Eligendi quasi praesentium ducimus totam, asperiores quos autem sed unde repellendus impedit vitae reprehenderit aperiam error eaque amet repellat, at cum, perferendis accusantium quibusdam quidem beatae. Deserunt fuga necessitatibus quisquam tempore expedita eveniet facilis a sequi ut 
+        </p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+
+        function counter(){
+            var count = setInterval(function()
+            {
+                var c = parseInt($('.counter').text());
+                $('.counter').text((++c).toString());
+                if( c == 100)
+                {
+                    clearInterval(count);
+                    $('.counter').addClass('hide')
+                    $('.pre').addClass('act')
+                }
+            },60)
+        }
+
+                counter()
+    </script>
+
+</body>
+</html>
